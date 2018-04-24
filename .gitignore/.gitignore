@@ -1,0 +1,219 @@
+#include <stdio.h>
+
+
+
+int main () {
+	char mat [3][3];
+	int y,x,j,p;
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9;
+	int b1,b2,b3,b4,b5,b6,b7,b8,b9;
+	b1 = 20;
+	b2 = 30;
+	b3 = 40;
+	b4 = 50;
+	b5 = 60;
+	b6 = 70; 
+	b7 = 80;
+	b8 = 90;
+	b9 = 100;
+	
+	a1 = 2;
+	a2 = 3;
+	a3 = 4;
+	a4 = 5;
+	a5 = 6;
+	a6 = 7; 
+	a7 = 8;
+	a8 = 9;
+	a9 = 10;
+    j = 0;
+    p = 2;
+   mat [0][0] = '1';
+   mat [0][1] = '2';
+   mat [0][2] = '3';
+   mat [1][0] = '4';
+   mat [1][1] = '5';
+   mat [1][2] = '6';
+   mat [2][0] = '7';
+   mat [2][1] = '8';
+   mat [2][2] = '9';
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   while (j == 0) {
+   scanf("%i",&y);
+   if (y == 1) {
+   	mat [0][0] = 'x';
+   	a1 = 1;
+   }
+   if (y == 2) {
+   	mat [0][1] = 'x';
+   	a2 = 1;
+   }
+   if (y == 3) {
+   	mat [0][2] = 'x';
+   	a3 = 1;
+   }
+    if (y == 4) {
+   	mat [1][0] = 'x';
+   	a4 = 1;
+   }
+   if (y == 5) {
+   	mat [1][1] = 'x';
+   	a5 = 1;
+   }
+   if (y == 6) {
+   	mat [1][2] = 'x';
+   	a6 = 1;
+   }
+    if (y == 7) {
+   	mat [2][0] = 'x';
+   	a7 = 1;
+   }
+   if (y == 8) {
+   	mat [2][1] = 'x';
+   	a8 = 1;
+   }
+   if (y == 9) {
+   	mat [2][2] = 'x';
+   	a9 = 1;
+   }
+   system("cls");
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   if (a1 == a2 == a3 || a4 == a5 == a6 || a7 == a8 == a9 || a1 == a4 == a7 || a2 == a5 == a8 || a3 == a6 == a9 || a1 == a5 == a9 || a3 == a5 == a7 ) {
+   	printf("Ganaste X\n");
+   	j = 1;
+   	printf("Quieres jugar otra vez?\n 1 = SI\n 0 = NO");
+    scanf("%i",&p);
+    if (p == 1) {
+    system("cls");
+    b1 = 20;
+	b2 = 30;
+	b3 = 40;
+	b4 = 50;
+	b5 = 60;
+	b6 = 70; 
+	b7 = 80;
+	b8 = 90;
+	b9 = 100;
+	
+	a1 = 2;
+	a2 = 3;
+	a3 = 4;
+	a4 = 5;
+	a5 = 6;
+	a6 = 7; 
+	a7 = 8;
+	a8 = 9;
+	a9 = 10;
+    j = 0;
+    p = 2;
+   mat [0][0] = '1';
+   mat [0][1] = '2';
+   mat [0][2] = '3';
+   mat [1][0] = '4';
+   mat [1][1] = '5';
+   mat [1][2] = '6';
+   mat [2][0] = '7';
+   mat [2][1] = '8';
+   mat [2][2] = '9';
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   }
+   else {
+   	return 0;
+   }
+   }
+   scanf("%i",&x);
+   if (x == 1) {
+   	mat [0][0] = 'O';
+   	b1 = 1;
+   }
+   if (x == 2) {
+   	mat [0][1] = 'O';
+   	b2 = 1;
+   }
+   if (x == 3) {
+   	mat [0][2] = 'O';
+   	b3 = 1;
+   }
+    if (x == 4) {
+   	mat [1][0] = 'O';
+   	b4 = 1;
+   }
+   if (x == 5) {
+   	mat [1][1] = 'O';
+   	b5 = 1;
+   }
+   if (x == 6) {
+   	mat [1][2] = 'O';
+   	b6 = 1;
+   }
+    if (x == 7) {
+   	mat [2][0] = 'O';
+   	b7 = 1;
+   }
+   if (x == 8) {
+   	mat [2][1] = 'O';
+   	b8 = 1;
+   }
+   if (x == 9) {
+   	mat [2][2] = 'O';
+   	b9 = 1;
+   }
+   system("cls");
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   if (b1 == b2 == b3 || b4 == b5 == b6 || b7 == b8 == b9 || b1 == b4 == b7 || b2 == b5 == b8 || b3 == b6 == b9 || b1 == b5 == b9 || b3 == b5 == b7 ) {
+   	printf("Ganaste O\n");
+   	j = 1;
+   	printf("Quieres jugar otra vez?\n 1 = SI\n 0 = NO\n");
+    scanf("%i",&p);
+    if (p == 1) {
+    system("cls");
+    b1 = 20;
+	b2 = 30;
+	b3 = 40;
+	b4 = 50;
+	b5 = 60;
+	b6 = 70; 
+	b7 = 80;
+	b8 = 90;
+	b9 = 100;
+	
+	a1 = 2;
+	a2 = 3;
+	a3 = 4;
+	a4 = 5;
+	a5 = 6;
+	a6 = 7; 
+	a7 = 8;
+	a8 = 9;
+	a9 = 10;
+    j = 0;
+    p = 2;
+   mat [0][0] = '1';
+   mat [0][1] = '2';
+   mat [0][2] = '3';
+   mat [1][0] = '4';
+   mat [1][1] = '5';
+   mat [1][2] = '6';
+   mat [2][0] = '7';
+   mat [2][1] = '8';
+   mat [2][2] = '9';
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   }
+   else {
+   	return 0;
+   }
+}
+
+	
+}
+}
