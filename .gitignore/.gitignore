@@ -4,7 +4,7 @@
 
 int main () {
 	char mat [3][3];
-	int y,x,j,p;
+	int y,x,j,p,n;
 	int a1,a2,a3,a4,a5,a6,a7,a8,a9;
 	int b1,b2,b3,b4,b5,b6,b7,b8,b9;
 	b1 = 20;
@@ -28,6 +28,7 @@ int main () {
 	a9 = 10;
     j = 0;
     p = 2;
+    n = 0;
    mat [0][0] = '1';
    mat [0][1] = '2';
    mat [0][2] = '3';
@@ -79,6 +80,7 @@ int main () {
    	a9 = 1;
    }
    system("cls");
+   n = n + 1;
    printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
    printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
    printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
@@ -110,6 +112,7 @@ int main () {
 	a9 = 10;
     j = 0;
     p = 2;
+    n = 0;
    mat [0][0] = '1';
    mat [0][1] = '2';
    mat [0][2] = '3';
@@ -126,6 +129,45 @@ int main () {
    else {
    	return 0;
    }
+   }
+    if (n >= 9) {
+   	printf("Empate\nPersiona para empezar otra partida\n");
+   	system("pause");
+   	system("cls");
+    b1 = 20;
+	b2 = 30;
+	b3 = 40;
+	b4 = 50;
+	b5 = 60;
+	b6 = 70; 
+	b7 = 80;
+	b8 = 90;
+	b9 = 100;
+	
+	a1 = 2;
+	a2 = 3;
+	a3 = 4;
+	a4 = 5;
+	a5 = 6;
+	a6 = 7; 
+	a7 = 8;
+	a8 = 9;
+	a9 = 10;
+    j = 0;
+    p = 2;
+    n = 0;
+   mat [0][0] = '1';
+   mat [0][1] = '2';
+   mat [0][2] = '3';
+   mat [1][0] = '4';
+   mat [1][1] = '5';
+   mat [1][2] = '6';
+   mat [2][0] = '7';
+   mat [2][1] = '8';
+   mat [2][2] = '9';
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
    }
    scanf("%i",&x);
    if (x == 1) {
@@ -165,6 +207,7 @@ int main () {
    	b9 = 1;
    }
    system("cls");
+   n = n + 1;
    printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
    printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
    printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
@@ -196,6 +239,7 @@ int main () {
 	a9 = 10;
     j = 0;
     p = 2;
+    n = 0;
    mat [0][0] = '1';
    mat [0][1] = '2';
    mat [0][2] = '3';
@@ -212,8 +256,49 @@ int main () {
    else {
    	return 0;
    }
+   
 }
+    if (n >= 9) {
+   	printf("Empate\nPersiona para empezar otra partida\n");
+   	system("pause");
+   	system("cls");
+    b1 = 20;
+	b2 = 30;
+	b3 = 40;
+	b4 = 50;
+	b5 = 60;
+	b6 = 70; 
+	b7 = 80;
+	b8 = 90;
+	b9 = 100;
+	
+	a1 = 2;
+	a2 = 3;
+	a3 = 4;
+	a4 = 5;
+	a5 = 6;
+	a6 = 7; 
+	a7 = 8;
+	a8 = 9;
+	a9 = 10;
+    j = 0;
+    p = 2;
+    n = 0;
+   mat [0][0] = '1';
+   mat [0][1] = '2';
+   mat [0][2] = '3';
+   mat [1][0] = '4';
+   mat [1][1] = '5';
+   mat [1][2] = '6';
+   mat [2][0] = '7';
+   mat [2][1] = '8';
+   mat [2][2] = '9';
+   printf("|%c|%c|%c|\n",mat[0][0],mat[0][1],mat[0][2]);
+   printf("|%c|%c|%c|\n",mat[1][0],mat[1][1],mat[1][2]);
+   printf("|%c|%c|%c|\n",mat[2][0],mat[2][1],mat[2][2]);
+   }
 
 	
 }
 }
+
